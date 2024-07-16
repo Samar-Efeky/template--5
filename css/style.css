@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* General styling ........................................................................................*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --main-color:#f44336;
+    --second-color:white;
+    --third-color:#616161;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+i{
+    color:var(--second-color);
+}
+h4{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0 2%;
+}
+h1{
+    font-size: 4rem;
+    font-weight:600;
+    margin-top:5% ;
+}
+p{
+    padding: 20px 0;
+    margin: 20px 0;
+}
+h2{
+    font-size: 3rem;
+    color: var(--main-color);
+    padding: 5px 0;
+    font-weight: 400;
+}
+.title{
+    position: relative;
+}
+.title::after{
+    content: "";
+    width: 6%;
+    height: 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 100%;
+    left: 1%;
+    background-color:red;
+}
+section,footer{
+    margin-left: 20%;
+    padding:2% 5%;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+/* nav-bar ...............................................................................................*/
+nav{
+    background-color: var(--main-color); 
+    color: var(--second-color);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+}
+#navBar{
+    padding: 5px 40px;
+    display: none;
+}
+#navBar h4{
+    padding-left: 50px;
+}
+#navList{
+    width: 20%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--main-color); 
+    color: var(--second-color);
+    z-index: 10;
+}
+#navList button{
+    width: 75%;
+    margin: auto;
+    background-color: var(--second-color);
+    color: var(--main-color);
+    padding: 10px 0px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+#navList div{
+    margin-top: 70px;
+    padding: 5px 15px;
+}
+#navList a{
+    text-decoration: none;
+    color: var(--second-color);
+    display: block;
+    padding: 10px 20px;
+}
+#navList ul{
+    list-style: none;
+    font-size: 1.3rem;
+    margin-top: 30px;
+}
+#navList ul li{
+    margin: 10px 0;
+    padding: 5px;
+}
+#navList ul li a:hover,
+#navList button:hover{
+    background-color:var(--second-color);
+    color:var(--third-color);
+}
+/*  showcase section ................................................................................................*/
+.showcase{
+    margin-top: 3%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.showcase-content{
+    width: 50%;
+    padding: 1%;
+    position: relative;
+    cursor: pointer;
+}
+.showcase-content::after{
+    content: "";
+    position: absolute;
+    background-color:rgba(255,255,255,0.2);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.showcase-content:hover::after{
+    display: none;
+}
+#lightBoxContainer{
+    position: fixed;
+    z-index: 11;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.8);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+#lightBoxItem{
+    width: 50%;
+    height: 50%;
+}
+#closed{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 2%;
+}
+#closed:hover{
+    background-color: rgb(143, 140, 140);
+}
+/* Designers ...........................................................................................*/
+.design{
+    font-weight: bold;
+}
+.designers{
+    display: flex;
+    flex-wrap: wrap;
+}
+.information{
+    width: 33.3%;
+    padding: 1%;
+}
+.information div{
+    background-color:rgb(229, 229, 229);
+}
+.information span{
+    color:gray;
+}
+.information p,.information h5,.information span{
+    padding: 2%;
+}
+/* packages ..............................................................................................*/
+.packages{
+    display: flex;
+    flex-wrap: wrap;
+}
+.package{
+    width: 50%;
+    padding: 2%;
+}
+table{
+    width: 100%;
+    font-size: 1.2rem;
+}
+td{
+    padding: 5%;
+    
+    text-align: center;
+    background-color:rgb(229, 229, 229);
+}
+th{
+    padding: 7%;
+    background-color:var(--third-color);
+    color: var(--second-color);
+}
+.pro{
+    background-color: var(--main-color);
+}
+.sign-up{
+    padding: 3% 6%;
+    background-color: var(--second-color);
+    border: 0;
+    font-size: 1.2rem;
+    transition: 0.2s;
+}
+.sign-up2{
+    background-color: var(--main-color);
+    color: var(--second-color);
+    transition: 0.2s;
+}
+.sign-up:hover{
+    background-color: black;
+    color: var(--second-color);
+}
+/* contact .......................................................................................................*/
+form{
+    padding: 2% 5%;
+}
+label{
+    margin-top: 1%;
+    display: block;
+}
+input{
+    width: 100%;
+    padding: 1% 0;
+}
+.submit-form{
+    width: 100%;
+    padding: 1% 0;
+    background-color: var(--main-color);
+    color: var(--second-color);
+    margin:2% 0 ;
+    border: 0;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+.footer{
+    text-align: center;
+    background-color:rgb(229, 229, 229);
+}
+@media screen and (max-width:992px) {
+    /* nav-bar .............................................*/
+    #navBar{
+        display:flex;
+    }
+    #navBar i{
+        padding:5px;
+        cursor: pointer;
+    }
+    #navList{
+        width: 100%;
+        display: none;
+    }
+    #navList button{
+        display: block;
+    }
+    /* showcase section ....................................*/
+    section,footer{
+        margin-left: 0px;
+    }
+    .showcase-content{
+        width: 100%;
+        padding: 3%;
+    }    
+    #lightBoxItem{
+        width: 50%;
+        height: 30%;
+    }
+    /* Designers ...............................................*/
+    .information{
+        width: 100%;
+        padding: 2%;
+    }    
+    /* packages ................................................*/
+    .package{
+        width: 100%;
+        padding: 5%;
+    }
+}
