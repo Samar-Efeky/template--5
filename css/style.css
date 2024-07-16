@@ -261,6 +261,13 @@ input{
     background-color:rgb(229, 229, 229);
 }
 @media screen and (max-width:992px) {
+    h4{
+        padding: 0 10px;
+        font-size: 1.5rem;
+    }
+    li a{
+        font-size: 1rem;
+    }
     /* nav-bar .............................................*/
     #navBar{
         display:flex;
